@@ -155,11 +155,7 @@
 
     static string DeterminarEstado(double def, double asis)
     {
-        // Reglas:
-        // - Si asistencia < 75% → Reprueba (por inasistencia)
-        // - Si asistencia >= 75% y definitiva >= 3.0 → Aprobado
-        // - Si asistencia >= 75% y definitiva >= 2.0 y < 3.0 → Habilita
-        // - Si asistencia >= 75% y definitiva < 2.0 → Reprueba
+     
         if (asis < 75.0) return "Reprueba (inasistencia)";
         if (def >= 3.0) return "Aprobado";
         if (def >= 2.0) return "Habilita";
